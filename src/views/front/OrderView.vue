@@ -15,7 +15,7 @@
         tbody
           tr(v-if='orders.length > 0' v-for='order in orders' :key='order._id')
             td {{ order._id }}
-            td {{ new Date(order.date).toLocaleDateString() }}
+            td {{ new Date(order.date).toLocaleString() }}
             td {{ order.totalPrice }}
             td
               ul
